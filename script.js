@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const IS_ON_RENDER = window.location.hostname.includes('onrender.com');
     // ВАЖНО: ЗАМЕНИТЕ 'your-backend-name' НА РЕАЛЬНОЕ ИМЯ ВАШЕГО БЭКЕНД СЕРВИСА НА RENDER
     const API_BASE_URL = IS_ON_RENDER 
-        ? 'https://koreanasiashop-backend.onrender.com' 
+        ? 'https://site2-269q.onrender.com/' 
         : 'http://127.0.0.1:8000';
 
     let allProducts = [];
