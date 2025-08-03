@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>KoreanAsiaShop - Эстетика твоей души в Дербенте</title>
+    <meta name="description" content="Магазин стильной корейской женской одежды в Дербенте. Новые коллекции, готовые образы и уникальная атмосфера азиатской моды.">
+    <meta name="keywords" content="корейская одежда, мода, магазин одежды, Дербент, женская одежда, k-fashion, KoreanAsiaShop">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Шрифты и Иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@1,500;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- API Яндекс.Карт -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ВАШ_API_КЛЮЧ&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body class="loading">
+
+    <div class="preloader"><div class="preloader__logo">KoreanAsiaShop</div></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo">KoreanAsiaShop</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#story">О Нас</a></li>
+                    <li><a href="#catalog">Коллекция</a></li>
+                    <li><a href="#lookbook">Lookbook</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" id="favorites-btn" class="favorites-link" aria-label="Избранное">
+                    <i class="fa-solid fa-heart"></i>
+                    <span id="favorites-counter" class="counter">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero__gradient-bg"></div>
+            <div class="petals">
+                <div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div><div><i></i></div>
+            </div>
+            <div class="container hero__content">
+                <h1 class="hero__title">
+                    <span class="line-mask"><span>Эстетика</span></span>
+                    <span class="line-mask"><span>твоей души</span></span>
+                </h1>
+                <p class="hero__subtitle">
+                    <span class="line-mask"><span>Современная корейская мода в сердце Дербента</span></span>
+                </p>
+                <a href="#catalog" class="btn hero__btn">К коллекции</a>
+            </div>
+        </section>
+
+        <!-- НОВЫЙ РАЗДЕЛ "ИСТОРИЯ" (ЖИВАЯ ВЕРСТКА) -->
+        <section class="story" id="story">
+            <div class="container">
+                <div class="story-heading">
+                    <h2 class="section-title">
+                        <span class="line-mask"><span>Наша История</span></span>
+                    </h2>
+                </div>
+
+                <div class="story-grid">
+                    
+                    <div class="story-item story-item-1">
+                        <div class="story-image-container">
+                            <img src="https://centergoroda.com/upload/resize_cache/iblock/45e/800_600_1/45e5b1442b9b0db7a31757955347ba72.jpg" alt="Атмосфера магазина">
+                        </div>
+                    </div>
+
+                    <div class="story-item story-item-2">
+                        <h3>
+                            <span class="line-mask"><span>Больше, чем</span></span>
+                            <span class="line-mask"><span>одежда.</span></span>
+                        </h3>
+                        <p>Это история, рассказанная через прикосновение ткани и чистоту линий. Мы верим, что стиль — это способ рассказать миру о себе, не говоря ни слова.</p>
+                    </div>
+
+                    <div class="story-item story-item-3">
+                        <div class="story-image-container">
+                             <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1972" alt="Текстура ткани">
+                        </div>
+                    </div>
+
+                    <div class="story-item story-item-4">
+                        <h3>
+                            <span class="line-mask"><span>В поисках</span></span>
+                            <span class="line-mask"><span>гармонии.</span></span>
+                        </h3>
+                        <p>Мы путешествуем по уютным шоурумам Сеула, отбирая не тренды, а характер и качество. Каждая вещь отобрана лично нами.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+		
+		
+
+        <section class="catalog" id="catalog">
+            <div class="container">
+                <h2 class="section-title">Наша Коллекция</h2>
+                <div class="catalog__filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <!-- Остальные кнопки будут созданы динамически из JS -->
+                </div>
+                <div class="product-grid"></div>
+            </div>
+        </section>
+        
+        <<section class="lookbook" id="lookbook">
+    <div class="container">
+        <h2 class="section-title">Готовые образы</h2>
+        <div class="lookbook-wrapper">
+            <!-- Образ 1 -->
+            <div class="lookbook-item">
+                <div class="lookbook-item__image">
+                    <!-- Путь к главному статическому фото -->
+                    <img src="assets/images/progu.jpg" alt="Образ для прогулки">
+                </div>
+                <div class="lookbook-item__content">
+                    <h3>Образ для прогулки по городу</h3>
+                    <p>Элегантность и комфорт для долгих прогулок. Классический тренч защитит от ветра, а широкие брюки подарят свободу движений.</p>
+                    <div class="look-products">
+                        <!-- Карточка 1: Путь к статическому фото -->
+                        <div class="look-product-card" data-id="2">
+                            <img src="assets/images/trench_seoul_1.jpg" alt="Классический тренч 'Seoul'">
+                            <span>Классический тренч "Seoul"</span>
+                        </div>
+                        <!-- Карточка 2: Путь к статическому фото -->
+                        <div class="look-product-card" data-id="3">
+                            <img src="assets/images/bryuki_palazzo_1.jpg" alt="Широкие брюки 'Palazzo'">
+                            <span>Широкие брюки "Palazzo"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Образ 2 -->
+            <div class="lookbook-item reverse">
+                <div class="lookbook-item__image">
+                    <!-- Путь к главному статическому фото -->
+                    <img src="assets/images/romantich.jpg" alt="Романтичный образ">
+                </div>
+                <div class="lookbook-item__content">
+                    <h3>Наряд для романтичного свидания</h3>
+                    <p>Нежное платье в сочетании с джинсовой курткой создает игривый и в то же время утонченный образ, идеальный для особенного вечера.</p>
+                    <div class="look-products">
+                        <!-- Карточка 3: Путь к статическому фото -->
+                        <div class="look-product-card" data-id="5">
+                            <img src="assets/images/plate_azure_1.jpg" alt="Платье в горошек 'Retro'">
+                            <span>Платье в горошек "Retro"</span>
+                        </div>
+                        <!-- Карточка 4: Путь к статическому фото -->
+                        <div class="look-product-card" data-id="6">
+                            <img src="assets/images/kurtka_oversize_1.jpg" alt="Джинсовая куртка 'Oversize'">
+                            <span>Джинсовая куртка "Oversize"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="contacts" id="contacts">
+             <div class="container">
+                 <h2 class="section-title">Ждём вас в гости</h2>
+                 <div class="contacts-wrapper">
+                    <div class="contacts__info">
+                        <h3>Наш адрес и контакты</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> г. Дербент, ул. Модная, д. 5</p>
+                        <p><i class="fa-solid fa-phone"></i> +7 (988) 123-45-67</p>
+                        <p><i class="fa-solid fa-clock"></i> Ежедневно с 10:00 до 21:00</p>
+                        <h4>Мы в соцсетях:</h4>
+                        <div class="socials">
+                            <a href="#" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                    <div id="map" class="contacts__map"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><a href="#hero" class="logo">KoreanAsiaShop</a><p class="footer-motto">Ваш проводник в мир азиатского стиля.</p></div>
+            <div class="footer-col"><h4>Навигация</h4><ul><li><a href="#story">О Нас</a></li><li><a href="#catalog">Коллекция</a></li><li><a href="#lookbook">Lookbook</a></li><li><a href="#contacts">Контакты</a></li></ul></div>
+            <div class="footer-col"><h4>Контакты</h4><p>г. Дербент, ул. Модная, д. 5</p><p>+7 (988) 123-45-67</p></div>
+            <div class="footer-col"><h4>Следите за нами</h4><div class="socials"><a href="#" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a><a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Telegram" target="_blank"><i class="fa-brands fa-telegram"></i></a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 KoreanAsiaShop. Все права защищены.</p></div>
+    </footer>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <button class="modal-nav modal-nav--prev hidden" aria-label="Предыдущее фото">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="modal-nav modal-nav--next hidden" aria-label="Следующее фото">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="modal-body"><img id="modalImg" src="" alt="Изображение товара"><div class="modal-info"><h3 id="modalTitle"></h3><p id="modalPrice"></p><p id="modalDesc">Это демонстрационное описание товара.</p></div></div>
+        </div>
+    </div>
+    
+    <div id="favoritesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body-favorites">
+                <h3>Ваше избранное</h3>
+                <div id="favorites-grid"></div>
+                <p id="favorites-empty-msg" style="display: none;">Вы еще ничего не добавили в избранное.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Скрипты -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

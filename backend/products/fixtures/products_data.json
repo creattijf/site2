@@ -1,0 +1,76 @@
+[
+  {
+    "model": "products.category", "pk": 1,
+    "fields": { "name": "Платья", "slug": "dresses" }
+  },
+  {
+    "model": "products.category", "pk": 2,
+    "fields": { "name": "Верхняя одежда", "slug": "outerwear" }
+  },
+  {
+    "model": "products.category", "pk": 3,
+    "fields": { "name": "Брюки и юбки", "slug": "bottoms" }
+  },
+  {
+    "model": "products.category", "pk": 4,
+    "fields": { "name": "Топы и блузы", "slug": "tops" }
+  },
+  {
+    "model": "products.product", "pk": 1,
+    "fields": { "name": "Летнее платье 'Azure'", "price": "4500.00", "category": 1 }
+  },
+  {
+    "model": "products.product", "pk": 2,
+    "fields": { "name": "Классический тренч 'Seoul'", "price": "9800.00", "category": 2 }
+  },
+  {
+    "model": "products.product", "pk": 3,
+    "fields": { "name": "Широкие брюки 'Palazzo'", "price": "5200.00", "category": 3 }
+  },
+  {
+    "model": "products.product", "pk": 4,
+    "fields": { "name": "Атласная блуза 'Silk'", "price": "3900.00", "category": 4 }
+  },
+  {
+    "model": "products.product", "pk": 5,
+    "fields": { "name": "Платье в горошек 'Retro'", "price": "5100.00", "category": 1 }
+  },
+  {
+    "model": "products.product", "pk": 6,
+    "fields": { "name": "Джинсовая куртка 'Oversize'", "price": "6200.00", "category": 2 }
+  },
+
+  
+  {
+    "model": "products.productimage", "pk": 1,
+    "fields": { "product": 1, "image": "products/plate_azure_1.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 2,
+    "fields": { "product": 1, "image": "products/plate_azure_2.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 3,
+    "fields": { "product": 2, "image": "products/trench_seoul_1.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 4,
+    "fields": { "product": 2, "image": "products/trench_seoul_2.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 5,
+    "fields": { "product": 3, "image": "products/bryuki_palazzo_1.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 6,
+    "fields": { "product": 4, "image": "products/bluza_silk_1.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 7,
+    "fields": { "product": 5, "image": "products/plate_retro_1.jpg" }
+  },
+  {
+    "model": "products.productimage", "pk": 8,
+    "fields": { "product": 6, "image": "products/kurtka_oversize_1.jpg" }
+  }
+]
